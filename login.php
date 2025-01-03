@@ -1,131 +1,131 @@
-<?php
-// Initialize the session
-session_start();
-require_once "connection.php";
-?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
 
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Numans');
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #ff6f61, #de3c3c);
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
+        }
 
-        html, body {
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background-image: url('Image/muar.jpg');
             background-size: cover;
-            background-repeat: no-repeat;
-            height: 100%;
-            font-family: 'Numans', sans-serif;
+            background-position: center;
+            filter: blur(8px);
+            z-index: -1;
         }
 
-        .container {
-            height: 100%;
-            align-content: center;
+        .login-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle white outline */
         }
 
-        .card {
-            height: 350px;
-            margin-top: auto;
-            margin-bottom: auto;
-            width: 400px;
-            background-color: rgba(0, 0, 0, 0.5) !important;
+        .form-control {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: #fff;
         }
 
-        .card-header h3 {
-            color: white;
+        .form-control::placeholder {
+            color: #ddd;
         }
 
-        .input-group-prepend span {
-            width: 50px;
-            background-color: #FFC312;
-            color: black;
-            border: 0 !important;
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.3);
+            color: #fff;
+            box-shadow: none;
         }
 
-        .login_btn {
-            color: black;
-            background-color: #FFC312;
-            width: 100px;
+        .btn-login,
+        .btn-customer {
+            background: #b22222;
+            color: #fff;
+            border-radius: 50px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
-        .login_btn:hover {
-            color: black;
-            background-color: white;
+        .btn-login:hover,
+        .btn-customer:hover {
+            background: #d62727;
+            transform: translateY(-5px);
         }
 
         .links {
-            color: white;
+            color: #f08080;
         }
 
         .links a {
-            margin-left: 4px;
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .links a:hover {
+            color: #f08080;
         }
     </style>
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="login-card p-4 rounded shadow-lg text-center w-100" style="max-width: 400px;">
+            <h3 class="mb-4">Login</h3>
+            <form action="auth.php" method="post" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-login btn-block">Login</button>
+            </form>
+            <div class="links mt-3">
+                Don't have an account? <a href="register.php">Register now</a>.
+            </div>
+            <a href="homepageCust.php" class="btn btn-customer btn-block mt-4">Continue As CUSTOMER</a>
+        </div>
+    </div>
 
     <script>
         function validateForm() {
-            const username = document.forms["loginForm"]["username"].value;
-            const password = document.forms["loginForm"]["password"].value;
-            
-            if (username === "" || password === "") {
+            const email = document.forms[0]["email"].value;
+            const password = document.forms[0]["password"].value;
+            if (email === "" || password === "") {
                 alert("Please fill in all fields.");
                 return false;
             }
             return true;
         }
     </script>
-</head>
-
-<body>
-    <div class="container">
-        <div class="d-flex justify-content-center h-100">
-            <div class="card">
-                <div class="card-header">
-                    <h3>Login</h3>
-                </div>
-                <div class="card-body">
-                    <form name="loginForm" action="auth.php" method="post" onsubmit="return validateForm()">
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input type="text" name="username" class="form-control" placeholder="username">
-                        </div>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
-                            </div>
-                            <input type="password" name="password" class="form-control" placeholder="password">
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="Login" class="btn float-right login_btn">
-                        </div>
-                        <?php
-                            if (isset($_SESSION['message'])) { ?>
-                            <p style="color:White;">
-                                <?php echo $_SESSION['message']; ?>
-                            </p>
-                        <?php
-                            }
-                            unset($_SESSION['message']);
-                        ?>
-                    </form>
-                </div>
-                <p style="color:White;">Don't have an account? <a href="register.php">Sign up now</a>.</p>
-                <a href="homepageCust.php" class="btn btn-success btn-default pull-left"><span class=""></span>Continue As CUSTOMER</a>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
