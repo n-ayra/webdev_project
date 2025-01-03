@@ -198,5 +198,5 @@ include "connection.php";
   <h2><em>Where To Find Us?<em></h2><br>
       <h3>61, Jalan Chengai, Taman Melodies, 80250 Johor Bahru, 80250 Johor, Johor Darul Ta'zim</h3><br>
       <img src="Image/Shop.JPG" width="600px" style="display: block; margin-left: auto; margin-right: auto;"><br>
-      <h4>https://maps.app.goo.gl/R9k9S1WGb8S59Ta36</h4>
+      <a href="https://maps.app.goo.gl/R9k9S1WGb8S59Ta36" target="_blank">Google Maps Link</a>
 </div>
