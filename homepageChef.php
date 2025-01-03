@@ -29,7 +29,7 @@ session_start();
       margin: 20px;
       letter-spacing: 10px;
       font-size: 80px;
-      color: #B62511;
+      color:rgb(25, 17, 182);
           
     }
 
@@ -63,8 +63,8 @@ session_start();
     }
   }
   .bg-1 {
-    background: #D34426;
-    color: #761401;
+    background:rgb(49, 38, 211);
+    color:rgb(1, 3, 118);
   }
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
@@ -87,7 +87,7 @@ session_start();
   }
   .btn {
     padding: 10px 20px;
-    background-color: #560A02;
+    background-color:rgb(3, 2, 86);
     color: #f1f1f1;
     border-radius: 0;
     transition: .2s;
@@ -98,14 +98,14 @@ session_start();
     color: #000;
   }
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color:rgb(7, 11, 142);
     color: #fff !important;
     text-align: center;
     font-size: 30px;
   }
   .modal-header, .modal-body {
     padding: 40px 50px;
-    background: #f2c7ac;
+    background:rgb(181, 172, 242);
   }
   .nav-tabs li a {
     color: #B62511;
@@ -225,7 +225,7 @@ session_start();
   <a class="up-arrow" href="#muoWestern" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>For More Information: <a href="https://www.facebook.com/Muowestern/photos/?ref=page_internal" data-toggle="tooltip" title="More info about Muo Western XXL">Click Here</a></p> 
+  <p>For More Information: <a href="about.php" data-toggle="tooltip" title="About us">Click Here</a></p> 
 </footer>
 
 <script>

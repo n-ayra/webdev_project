@@ -191,12 +191,12 @@ include "connection.php";
 
 <!-- Container (Red Panda Introduction) -->
 <div id="about" class="container text-center">
-  <h4>ABOut zamir</h4>
+  <h4>ABOUT FLAME & FORK</h4>
   <h2><em>About us</em></h2>
-  <p>Muo Western XXL serves a variety of western cuisine, including Chicken Chop, Lamb Chop, Grilled Salmon, and more. To create a flawless, flavorful, and tastiest dish, we use only premium and high-quality ingredients. For meat-based meals like Lamb Chop and Grilled Beef Burger, we use imported meat from Australia. You will experience a level of pleasure that you have never experienced before. Only at Muo Western XXL can you sample the incomparable deliciousness of cuisine.</p>
+  <p>Flame and Fork specializes in a diverse range of Western cuisine, featuring signature dishes like Grilled Ribeye Steak, Herb-Crusted Lamb Chops, Classic Chicken Chop, Grilled Salmon Fillet, Beef Wellington, Spaghetti Carbonara, BBQ Beef Ribs, Fish and Chips, Cheesy Beef Burger, and the Mediterranean Grilled Veggie Platter. We pride ourselves on delivering flawless, flavorful, and irresistibly tasty meals by using only premium, high-quality ingredients. For meat-based dishes such as Lamb Chops and Cheesy Beef Burger, we source the finest imported meat from Australia. Pair your meal with our refreshing selection of Western drinks, including Iced Lemon Tea, Vanilla Milkshake, Iced Mocha, Sparkling Apple Cooler, and Strawberry Lemonade. Indulge in an unparalleled dining experience and savor the exceptional flavors that can only be found at Flame and Fork.</p>
   <br>
   <h2><em>Where To Find Us?<em></h2><br>
-      <h3>No. 9 MBJB de' Kontena, Permas Jaya, 81750 Masai, Johor</h3><br>
+      <h3>61, Jalan Chengai, Taman Melodies, 80250 Johor Bahru, 80250 Johor, Johor Darul Ta'zim</h3><br>
       <img src="Image/Shop.JPG" width="600px" style="display: block; margin-left: auto; margin-right: auto;"><br>
-      <img src="Image/Location.JPG" width="485px" height="425px" style="border: 5px; border-color: black; display: block; margin-left: auto; margin-right: auto;" >
+      <a href="https://maps.app.goo.gl/R9k9S1WGb8S59Ta36" target="_blank">Google Maps Link</a>
 </div>
