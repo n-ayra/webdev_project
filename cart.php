@@ -27,7 +27,7 @@ session_start();
       margin: 20px;
       letter-spacing: 10px;
       font-size: 80px;
-      color: #B62511;
+      color: #f1f1f1;
           
     }
 
@@ -57,8 +57,8 @@ session_start();
     }
   }
   .bg-1 {
-    background: #f2c7ac;
-    color: #761401;
+    background:rgb(134, 134, 134);
+    color: #f1f1f1;
   }
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
@@ -81,11 +81,11 @@ session_start();
   }
   .btn:hover, .btn:focus {
     border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
+    background-color:rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
   }
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color: #000000;
     color: #fff !important;
     text-align: center;
     font-size: 30px;
@@ -94,12 +94,12 @@ session_start();
     padding: 40px 50px;
   }
   .nav-tabs li a {
-    color: #B62511;
+    color: #f1f1f1;
   }
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #741a0d;
+    background-color: #000000;
     border: 0;
     font-size: 15px !important;
     letter-spacing: 6px;
@@ -113,7 +113,7 @@ session_start();
   }
   .navbar-nav li.active a {
     color: #fff !important;
-    background-color: #B62511 !important;
+    background-color: #f1f1f1 !important;
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
@@ -221,7 +221,7 @@ session_start();
   
 </table>
 <br>
-<a href="payment.php?NAME=<?php echo $newPrice;?>" class="btn btn-danger" style="text-align: center; display: block;background-color: #8e1e07;">Payment</a>
+<a href="payment.php?NAME=<?php echo $newPrice;?>" class="btn btn-danger" style="text-align: center; display: block;background-color: #b78561;">Payment</a>
   </div>
 </div>
 </form>
