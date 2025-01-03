@@ -94,7 +94,7 @@ include "connection.php";
     color: #000;
   }
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color: #000000;
     color: #fff !important;
     text-align: center;
     font-size: 30px;
@@ -108,7 +108,7 @@ include "connection.php";
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #741a0d;
+    background-color: #000000;
     border: 0;
     font-size: 15px !important;
     letter-spacing: 6px;
