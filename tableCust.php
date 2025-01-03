@@ -94,7 +94,7 @@ if(isset($_POST['send'])){
   }
   .btn {
     padding: 15px 25px;
-    background-color: #560A02;
+    background-color: #000000;
     color: #f1f1f1;
     border-radius: 5px;
     font-size: 18px;
@@ -114,14 +114,14 @@ if(isset($_POST['send'])){
 }
 
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color: #000000;
     color: #fff !important;
     text-align: center;
     font-size: 30px;
   }
   .modal-header, .modal-body {
     padding: 40px 50px;
-    background: #f2c7ac;
+    background:rgb(147, 145, 144);
   }
   .nav-tabs li a {
     color: #B62511;
@@ -129,7 +129,7 @@ if(isset($_POST['send'])){
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #741a0d;
+    background-color: #000000;
     border: 0;
     font-size: 15px !important;
     letter-spacing: 6px;
