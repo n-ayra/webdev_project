@@ -218,19 +218,20 @@ header("location:cart.php");
         </div>
         <div class="modal-body">
           <form method="POST">
-            <?php while($row=$rows->fetch_assoc()):?>
-              
-              <?php $num1  = doubleval($row['PRICE']);?>
-              <?php $num2  = intval($row['QUANTITY']);?>
-    
-              <?php $oriPrice = $num1/$num2;?>
-              
-            <input type="text" id="name" name="name" class="hideme" value="<?php echo $row['NAME'];?>">
-            <input type="text" id="price" name="price" class="hideme" value="<?php echo $oriPrice;?>">
-              <label for="psw"><span class="glyphicon glyphicon-tags"></span>  Quantity</label>
-              <input type="text" class="form-control" id="quantity" name="quantity" value="<?php echo $row['QUANTITY']; ?>">
-              
-            <?php endwhile; ?>
+          <?php
+while ($row = $rows->fetch_assoc()) {
+    $num1 = doubleval($row['PRICE']);
+    $num2 = intval($row['QUANTITY']);
+
+    // Avoid division by zero
+    $oriPrice = $num2 != 0 ? $num1 / $num2 : 0;
+
+    echo '<input type="text" id="name" name="name" class="hideme" value="' . $row['NAME'] . '">';
+    echo '<input type="text" id="price" name="price" class="hideme" value="' . $oriPrice . '">';
+    echo '<label for="psw"><span class="glyphicon glyphicon-tags"></span>  Quantity</label>';
+    echo '<input type="text" class="form-control" id="quantity" name="quantity" value="' . $row['QUANTITY'] . '" min="1" required>';
+}
+?>
               
               <button type="submit" name="send" class="btn btn-block"> 
                 <span class="fa fa-check-circle-o"> Confirm</span>
