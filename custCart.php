@@ -57,8 +57,8 @@ session_start();
     }
   }
   .bg-1 {
-    background: #f2c7ac;
-    color: #761401;
+    background:rgb(165, 165, 165);
+    color:rgb(0, 0, 0);
   }
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
@@ -81,11 +81,11 @@ session_start();
   }
   .btn:hover, .btn:focus {
     border: 1px solid #333;
-    background-color: #fff;
+    background-color: #000000;
     color: #000;
   }
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color: #2b8057;
     color: #fff !important;
     text-align: center;
     font-size: 30px;
@@ -99,7 +99,7 @@ session_start();
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #741a0d;
+    background-color: #2b8057;
     border: 0;
     font-size: 15px !important;
     letter-spacing: 6px;
@@ -219,23 +219,13 @@ session_start();
   
 </table>
 <br>
-<a href="custPayment.php?NAME=<?php echo $newPrice;?>" class="btn btn-danger" style="text-align: center; display: block;background-color: #8e1e07;">Payment</a>
+<a href="custPayment.php?NAME=<?php echo $newPrice;?>" class="btn btn-danger" style="text-align: center; display: block;background-color:rgb(0, 0, 0);">Payment</a>
   </div>
 </div>
 <br>
 <br>
 <br>
 <br>
-
-
-
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#muoWestern" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p>For More Information: <a href="https://www.facebook.com/Muowestern/photos/?ref=page_internal" data-toggle="tooltip" title="More info about Muo Western XXL">Click Here</a></p> 
-</footer>
 
 <script>
 $(document).ready(function(){
