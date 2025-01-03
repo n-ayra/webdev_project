@@ -30,34 +30,28 @@ body {
 
 /* Navbar Style */
 .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
     background-color: #2b8057;
-    border: none;
-    padding: 15px 0;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar li a {
-    color: #f1f1f1 !important;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 15px 20px;
-    transition: background-color 0.3s ease;
-}
-
-.navbar-nav li.active a {
+    border: 0;
+    font-size: 15px !important;
+    letter-spacing: 6px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
     background-color: #B62511 !important;
-}
-
-.navbar-nav li a:hover {
-    background-color: #206142;
-}
-
-.navbar .navbar-brand {
-    color: #f1f1f1;
-    font-size: 24px;
-    font-weight: bold;
-}
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  
 
 /* Hero Section */
 .container {

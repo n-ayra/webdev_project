@@ -20,164 +20,162 @@ session_start();
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-  body {
-    font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
+body {
+  font: 400 15px/1.8 'Lato', sans-serif;
+  color: #444;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 20px 0;
+  letter-spacing: 5px;
+  font-size: 50px;
+  color: #3a3a3a;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h4 {
+  margin: 20px 0;
+  font-size: 24px;
+  color: #555;
+  text-align: center;
+}
+
+.container {
+  padding: 60px 20px;
+}
+
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #2b8057;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+  font-size: 16px;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  background-color: #45a049 !important;
+  color: white !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+footer {
+  background-color: #333;
+  color: #f5f5f5;
+  padding: 40px;
+  text-align: center;
+}
+
+footer a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #4CAF50;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color:rgb(251, 0, 0);
+  color: white;
+}
+
+.modal-header, .modal-body {
+  padding: 20px;
+}
+
+.modal-header {
+  background-color: #2b8057;
+  color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-body {
+  background-color: #f9f9f9;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+}
+
+.table td {
+  padding: 10px;
+  text-align: left;
+}
+
+input[type="text"], input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus, input[type="file"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+
+textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-header {
+    text-align: center;
   }
 
   h1 {
-      margin: 20px;
-      letter-spacing: 10px;
-      font-size: 80px;
-      color: #206142;
-          
-    }
+    font-size: 36px;
+  }
 
-  h4 {
-    margin: 10px 0 30px 0;
-    letter-spacing: 2px;      
-    font-size: 20px;
-  }
   .container {
-    padding: 100px 140px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 40px 10px;
   }
-  .container-fluid {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .person {
-    border: 0px solid transparent;
-    margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
-    opacity: 0.7;
-  }
-  .person:hover {
-    border-color: #f1f1f1;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
-  .bg-1 {
-    background: #D34426;
-    color: #761401;
-  }
-  .bg-1 h3 {color: #fff;}
-  .bg-1 p {font-style: italic;}
-  .list-group-item:first-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-  .list-group-item:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail p {
-    margin-top: 15px;
-    color: #555;
-  }
-  .btn {
-    padding: 10px 20px;
-    background-color: #2b8057;
-    color: #f1f1f1;
-    border-radius: 18px;
-    transition: .2s;
-  }
-  .btn:hover, .btn:focus {
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
-  }
-  .modal-header, h4, .close {
-    background-color: #206142;
-    color: #fff !important;
-    text-align: center;
-    font-size: 30px;
-  }
-  .modal-header, .modal-body {
-    padding: 40px 50px;
-    background: #FFFDD0;
-  }
-  .nav-tabs li a {
-    color: #B62511;
-  }
-  .navbar {
-    font-family: Montserrat, sans-serif;
-    margin-bottom: 0;
-    background-color: #2b8057;
-    border: 0;
-    font-size: 15px !important;
-    letter-spacing: 6px;
-    opacity: 0.9;
-  }
-  .navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
-  }
-  .navbar-nav li a:hover {
-    color: #fff !important;
-  }
-  .navbar-nav li.active a {
-    color: #fff !important;
-    background-color: #B62511 !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-  }
-  .open .dropdown-toggle {
-    color: #fff;
-    background-color: #555 !important;
-  }
-  .dropdown-menu li a {
-    color: #000 !important;
-  }
-  .dropdown-menu li a:hover {
-    background-color: red !important;
-  }
-  footer {
-    background-color: #2d2d30;
-    color: #f5f5f5;
-    padding: 32px;
-  }
-  footer a {
-    color: #f5f5f5;
-  }
-  footer a:hover {
-    color: #777;
-    text-decoration: none;
-  }  
-  .form-control {
-    border-radius: 0;
-  }
-  textarea {
-    resize: none;
-  }
-  th {
-    background-color: brown;
-    color: black;
-  }
-  table, th, td {
-    border: 5px solid #fff;
-    width: 900px;
-  }
-  .hideme
-{
-    display:none;
-    visibility:hidden;
 }
-.showme
-{
-    display:inline;
-    visibility:visible;
-}  
   </style>
 </head>
 <body id="muoWestern" data-spy="scroll" data-target=".navbar" data-offset="50">

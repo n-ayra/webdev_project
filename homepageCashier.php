@@ -20,97 +20,41 @@ session_start();
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+  <style>
   body {
-    font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
+    font: 400 16px/1.8 'Lato', sans-serif;
+    color: #555;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
   h1 {
-      margin: 20px;
-      letter-spacing: 10px;
-      font-size: 80px;
-      color: #2b8057;
-          
-    }
+    margin: 20px;
+    letter-spacing: 5px;
+    font-size: 60px;
+    color: #2b8057;
+    text-align: center;
+  }
 
   h4 {
-    margin: 10px 0 30px 0;
-    letter-spacing: 2px;      
-    font-size: 20px;
-  }
-  .container {
-    padding: 100px 140px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .container-fluid {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .person {
-    border: 0px solid transparent;
-    margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
-    opacity: 0.7;
-  }
-  .person:hover {
-    border-color: #f1f1f1;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
-  .bg-1 {
-    background: #2b8057;
-    color: #2b8057;
-  }
-  .bg-1 h3 {color: #fff;}
-  .bg-1 p {font-style: italic;}
-  .list-group-item:first-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-  .list-group-item:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail p {
-    margin-top: 15px;
-    color: #555;
-  }
-  .btn {
-    padding: 10px 20px;
-    background-color: #2b8057;
-    color: #f1f1f1;
-    border-radius: 18px;
-    transition: .2s;
-  }
-  .btn:hover, .btn:focus {
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
-  }
-  .modal-header, h4, .close {
-    background-color: #206142;
-    color: #fff !important;
+    margin: 10px 0 30px;
+    letter-spacing: 2px;
+    font-size: 24px;
     text-align: center;
-    font-size: 30px;
+    color: #444;
   }
-  .modal-header, .modal-body {
-    padding: 40px 50px;
-    background: #FFFDD0;
+
+  .container {
+    flex: 1; /* Ensures the container expands to take up available space */
+    padding: 80px 120px;
+    margin: 0 auto;
   }
-  .nav-tabs li a {
-    color: #2b8057;
-  }
-  .navbar {
+  
+   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
     background-color: #2b8057;
@@ -127,57 +71,120 @@ session_start();
   }
   .navbar-nav li.active a {
     color: #fff !important;
-    background-color: #2b8057 !important;
+    background-color: #B62511 !important;
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
   }
-  .open .dropdown-toggle {
+  
+  .btn {
+    background-color: #2b8057;
     color: #fff;
-    background-color: #555 !important;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
   }
-  .dropdown-menu li a {
-    color: #000 !important;
+
+  .btn:hover, .btn:focus {
+    background-color: #1f6a47;
+    color: #fff;
   }
-  .dropdown-menu li a:hover {
-    background-color: red !important;
-  }
+
   footer {
     background-color: #2d2d30;
-    color: #f5f5f5;
-    padding: 32px;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Pushes the footer to the bottom */
   }
+
   footer a {
-    color: #f5f5f5;
+    color: #f1c40f;
+    font-weight: 600;
   }
+
   footer a:hover {
-    color: #777;
+    color: #fff;
     text-decoration: none;
-  }  
+  }
+
+  .modal-header {
+    background-color: #2b8057;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .modal-body {
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+
+  .table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+
+  .table th {
+    background-color: #2b8057;
+    color: #fff;
+  }
+
+  .thumbnail {
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .thumbnail:hover {
+    transform: scale(1.05);
+  }
+
   .form-control {
-    border-radius: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
   }
+
   textarea {
-    resize: none;
+    resize: vertical;
+    border-radius: 5px;
+    border: 1px solid #ddd;
   }
-  th {
-    background-color: brown;
-    color: black;
+
+  @media (max-width: 768px) {
+    .navbar {
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+
+    .btn {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
   }
-  table, th, td {
-    border: 5px solid #fff;
-    width: 900px;
-  }
-  .hideme
-{
-    display:none;
-    visibility:hidden;
-}
-.showme
-{
-    display:inline;
-    visibility:visible;
-}  
+</style>
+
   </style>
 </head>
 <body id="muoWestern" data-spy="scroll" data-target=".navbar" data-offset="50">

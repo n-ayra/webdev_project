@@ -45,9 +45,6 @@ h4 {
     margin-right: auto;
   }
 
-.nav-tabs li a {
-    color:rgb(0, 0, 0);
-  }
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
@@ -65,11 +62,12 @@ h4 {
   }
   .navbar-nav li.active a {
     color: #fff !important;
-    background-color:rgb(0, 0, 0) !important;
+    background-color: #B62511 !important;
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
   }
+  
 .footer {
   background-color: #343a40;
   color: #d6d6d6;
