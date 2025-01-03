@@ -189,7 +189,7 @@ $totalPayment = $_GET['NAME'];
         
               <label for="psw"><span class=""></span>Choose payment method: </label>
               
-              <a onclick="location.href='transfer.php?NAME=<?php echo $totalPayment;?>'" class="btn btn-primary btn-lg btn-block"><span class="fa fa-credit-card"> Transfer</span></a>
+
         
                 <a href="payAtCounter.php" class="btn btn-success btn-lg btn-block"><span class="fa fa-money"></span> Pay At Counter</a>
         </div>
