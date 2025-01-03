@@ -108,7 +108,7 @@ include "connection.php";
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color:rgb(34, 13, 116);
+    background-color:rgb(25, 13, 116);
     border: 0;
     font-size: 15px !important;
     letter-spacing: 6px;
