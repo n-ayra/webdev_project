@@ -90,7 +90,7 @@ $totalPayment = $_GET['NAME'];
     color: #000;
   }
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color: #000000;
     color: #fff !important;
     text-align: center;
     font-size: 30px;
@@ -183,7 +183,7 @@ $totalPayment = $_GET['NAME'];
       <div class="modal-content">
         <div class="modal-header">
             <h4>TOTAL PRICE:</h4>
-          <h4><span class="	glyphicon glyphicon-usd"></span><?php echo $totalPayment;?></h4>
+          <h4>RM<span class="	glyphicon glyphicon-usd"></span><?php echo $totalPayment;?></h4>
         </div>
         <div class="modal-body">
         
