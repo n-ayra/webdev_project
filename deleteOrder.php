@@ -20,7 +20,7 @@ session_destroy();
 <html lang="en">
 <head>
 
-  <title>MUO Western XXL</title>
+  <title>Flame & Fork</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">

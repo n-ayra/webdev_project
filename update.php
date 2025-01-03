@@ -38,7 +38,7 @@ header("location:cart.php");
 <html lang="en">
 <head>
 
-  <title>MUO Western XXL</title>
+  <title>Flame & Fork</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -208,7 +208,7 @@ header("location:cart.php");
 
 <!-- Container (Red Panda Introduction) -->
 <div id="about" class="container text-center">
-  <h4>MUO WESTERN XXL</h4>
+  <h4>Flame & Fork</h4>
     
 <div id="order" class="bg-1">
       <!-- Modal content-->
