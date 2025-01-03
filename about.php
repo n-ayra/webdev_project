@@ -191,7 +191,7 @@ include "connection.php";
 
 <!-- Container (Red Panda Introduction) -->
 <div id="about" class="container text-center">
-  <h4>ABOUT JIJI</h4>
+  <h4>ABOUT Hariz</h4>
   <h2><em>About us</em></h2>
   <p>Muo Western XXL serves a variety of western cuisine, including Chicken Chop, Lamb Chop, Grilled Salmon, and more. To create a flawless, flavorful, and tastiest dish, we use only premium and high-quality ingredients. For meat-based meals like Lamb Chop and Grilled Beef Burger, we use imported meat from Australia. You will experience a level of pleasure that you have never experienced before. Only at Muo Western XXL can you sample the incomparable deliciousness of cuisine.</p>
   <br>
