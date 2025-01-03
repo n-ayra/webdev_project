@@ -70,7 +70,7 @@ $rows=$val;
     }
   }
   .bg-1 {
-    background: #f2c7ac;
+    background: #a8d6b4;
     color: #761401;
   }
   .bg-1 h3 {color: #fff;}
@@ -105,7 +105,7 @@ $rows=$val;
     color: #000;
   }
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color: #000000;
     color: #fff !important;
     text-align: center;
     font-size: 30px;
@@ -125,7 +125,7 @@ $rows=$val;
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #741a0d;
+    background-color: #000000;
     border: 0;
     font-size: 15px !important;
     letter-spacing: 6px;

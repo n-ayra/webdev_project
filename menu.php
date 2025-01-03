@@ -5,7 +5,7 @@ include "connection.php";
 <html lang="en">
 <head>
 
-  <title>MUO Western XXL</title>
+<title>Flame & Fork</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@ include "connection.php";
       margin: 20px;
       letter-spacing: 10px;
       font-size: 80px;
-      color: #B62511;
+      color: #206142;
           
     }
 
@@ -37,7 +37,7 @@ include "connection.php";
     font-size: 20px;
   }
   .container {
-    padding: 80px 120px;
+    padding: 100px 140px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -46,7 +46,7 @@ include "connection.php";
     margin-right: auto;
   }
   .person {
-    border: 10px solid transparent;
+    border: 0px solid transparent;
     margin-bottom: 25px;
     width: 80%;
     height: 80%;
@@ -85,9 +85,9 @@ include "connection.php";
   }
   .btn {
     padding: 10px 20px;
-    background-color: #560A02;
+    background-color: #2b8057;
     color: #f1f1f1;
-    border-radius: 0;
+    border-radius: 18px;
     transition: .2s;
   }
   .btn:hover, .btn:focus {
@@ -96,13 +96,14 @@ include "connection.php";
     color: #000;
   }
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color: #206142;
     color: #fff !important;
     text-align: center;
     font-size: 30px;
   }
   .modal-header, .modal-body {
     padding: 40px 50px;
+    background: #FFFDD0;
   }
   .nav-tabs li a {
     color: #B62511;
@@ -110,7 +111,7 @@ include "connection.php";
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #741a0d;
+    background-color: #2b8057;
     border: 0;
     font-size: 15px !important;
     letter-spacing: 6px;
@@ -192,12 +193,12 @@ include "connection.php";
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav navbar-left">
-        <li><a onclick="location.href='homepageCashier.php'">HOMEPAGE</a></li>
-        <li><a onclick="location.href='profileCashier.php'">MY PROFILE</a></li>
-        <li><a onclick="location.href='addMenu.php'">ADD MENU</a></li>
-        <li><a onclick="location.href='menu.php'">EDIT MENU</a></li>
-        <li><a onclick="location.href='custTable.php'">CUSTOMER PAYMENT</a></li>
-        <li><a href="logout.php">LOG OUT</a></li>
+    <li><a onclick="location.href='homepageCashier.php'">Homepage</a></li>
+        <li><a onclick="location.href='profileCashier.php'">Profile</a></li>
+        <li><a onclick="location.href='addMenu.php'">Add Menu</a></li>
+        <li><a onclick="location.href='menu.php'">Edit Menu</a></li>
+        <li><a onclick="location.href='custTable.php'">Payment</a></li>
+        <li><a href="logout.php">Log Out</a></li>
       </ul>
     </div>
   </div>
@@ -250,8 +251,7 @@ include "connection.php";
   <a class="up-arrow" href="#muoWestern" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>For More Information: <a href="https://www.facebook.com/Muowestern/photos/?ref=page_internal" data-toggle="tooltip" title="More info about Muo Western XXL">Click Here</a></p> 
-</footer>
+ </footer>
 
 <script>
 $(document).ready(function(){
