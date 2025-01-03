@@ -70,7 +70,7 @@ $rows=$val;
     }
   }
   .bg-1 {
-    background: #a8d6b4;
+    background:rgb(183, 178, 178);
     color: #761401;
   }
   .bg-1 h3 {color: #fff;}
