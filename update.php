@@ -112,7 +112,7 @@ header("location:cart.php");
   }
   .btn {
     padding: 10px 20px;
-    background-color: #560A02;
+    background-color:rgb(0, 0, 0);
     color: #f1f1f1;
     border-radius: 0;
     transition: .2s;
@@ -123,7 +123,7 @@ header("location:cart.php");
     color: #000;
   }
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color:rgb(0, 0, 0);
     color: #fff !important;
     text-align: center;
     font-size: 30px;
