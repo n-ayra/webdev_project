@@ -115,12 +115,12 @@ if(isset($_POST['send'])){
     background:rgb(172, 172, 242);
   }
   .nav-tabs li a {
-    color: #B62511;
+    color:rgb(0, 0, 0);
   }
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #741a0d;
+    background-color:rgb(0, 0, 0);
     border: 0;
     font-size: 15px !important;
     letter-spacing: 6px;
@@ -134,7 +134,7 @@ if(isset($_POST['send'])){
   }
   .navbar-nav li.active a {
     color: #fff !important;
-    background-color: #B62511 !important;
+    background-color:rgb(0, 0, 0) !important;
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
