@@ -81,7 +81,7 @@ session_start();
   }
   .btn:hover, .btn:focus {
     border: 1px solid #333;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
     color:rgb(255, 255, 255);
   }
   .modal-header, h4, .close {
