@@ -19,164 +19,220 @@ session_start();
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-  body {
-    font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
-  }
+  /* General Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 
-  h1 {
-      margin: 20px;
-      letter-spacing: 10px;
-      font-size: 80px;
-      color: #206142;
-          
-    }
-
-  h4 {
-    margin: 10px 0 30px 0;
-    letter-spacing: 2px;      
-    font-size: 20px;
-  }
-  .container {
-    padding: 100px 140px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .container-fluid {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .person {
-    border: 0px solid transparent;
-    margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
-    opacity: 0.7;
-  }
-  .person:hover {
-    border-color: #f1f1f1;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
-  .bg-1 {
-    background: #D34426;
-    color: #761401;
-  }
-  .bg-1 h3 {color: #fff;}
-  .bg-1 p {font-style: italic;}
-  .list-group-item:first-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-  .list-group-item:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
+/* Navbar Style */
+.navbar {
+    background-color: #2c3e50;
     border: none;
     border-radius: 0;
-  }
-  .thumbnail p {
-    margin-top: 15px;
-    color: #555;
-  }
-  .btn {
-    padding: 10px 20px;
-    background-color: #2b8057;
-    color: #f1f1f1;
-    border-radius: 18px;
-    transition: .2s;
-  }
-  .btn:hover, .btn:focus {
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
-  }
-  .modal-header, h4, .close {
-    background-color: #206142;
-    color: #fff !important;
-    text-align: center;
-    font-size: 30px;
-  }
-  .modal-header, .modal-body {
-    padding: 40px 50px;
-    background: #FFFDD0;
-  }
-  .nav-tabs li a {
-    color: #B62511;
-  }
-  .navbar {
-    font-family: Montserrat, sans-serif;
-    margin-bottom: 0;
-    background-color: #2b8057;
-    border: 0;
-    font-size: 15px !important;
-    letter-spacing: 6px;
-    opacity: 0.9;
-  }
-  .navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
-  }
-  .navbar-nav li a:hover {
-    color: #fff !important;
-  }
-  .navbar-nav li.active a {
-    color: #fff !important;
-    background-color: #B62511 !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-  }
-  .open .dropdown-toggle {
-    color: #fff;
-    background-color: #555 !important;
-  }
-  .dropdown-menu li a {
-    color: #000 !important;
-  }
-  .dropdown-menu li a:hover {
-    background-color: red !important;
-  }
-  footer {
-    background-color: #2d2d30;
-    color: #f5f5f5;
-    padding: 32px;
-  }
-  footer a {
-    color: #f5f5f5;
-  }
-  footer a:hover {
-    color: #777;
-    text-decoration: none;
-  }  
-  .form-control {
-    border-radius: 0;
-  }
-  textarea {
-    resize: none;
-  }
-  th {
-    background-color: brown;
-    color: black;
-  }
-  table, th, td {
-    border: 5px solid #fff;
-    width: 900px;
-  }
-  .hideme
-{
-    display:none;
-    visibility:hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.showme
-{
-    display:inline;
-    visibility:visible;
-}  
+
+.navbar li a {
+    color: #ecf0f1 !important;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 20px;
+}
+
+.navbar-nav li.active a {
+    background-color: #e74c3c !important;
+}
+
+.navbar .navbar-brand {
+    color: #ecf0f1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.container {
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+}
+
+.container h4 {
+    font-size: 26px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.container .bg-1 {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.container .bg-1 h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.container .bg-1 p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Profile Section */
+.profile-header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.profile-header h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.profile-header .profile-info {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin: 8px 0;
+}
+
+/* Buttons */
+.btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.table th {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.table td {
+    background-color: #ecf0f1;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #e6e6e6;
+}
+
+/* Modal Styling */
+.modal-header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+}
+
+.modal-body {
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+.modal-footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.modal-footer .btn {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.modal-footer .btn:hover {
+    background-color: #34495e;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ecf0f1;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e74c3c;
+}
+
+/* Scroll to Top Button */
+.up-arrow {
+    font-size: 30px;
+    color: #ecf0f1;
+    cursor: pointer;
+}
+
+.up-arrow:hover {
+    color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .navbar li a {
+        font-size: 14px;
+    }
+
+    .profile-header h1 {
+        font-size: 30px;
+    }
+
+    .profile-header .profile-info {
+        font-size: 16px;
+    }
+}
+
   </style>
 </head>
 <body id="muoWestern" data-spy="scroll" data-target=".navbar" data-offset="50">
