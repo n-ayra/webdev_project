@@ -84,7 +84,7 @@ require_once "connection.php";
         }
 
         .links {
-            color: #f08080;
+            color:rgb(0, 0, 0);
         }
 
         .links a {
