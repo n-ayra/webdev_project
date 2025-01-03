@@ -105,7 +105,7 @@ session_start();
   }
   .modal-header, .modal-body {
     padding: 40px 50px;
-    background: #f2c7ac;
+    background:rgb(181, 172, 242);
   }
   .nav-tabs li a {
     color: #B62511;
@@ -225,7 +225,7 @@ session_start();
   <a class="up-arrow" href="#muoWestern" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>For More Information: <a href="https://www.facebook.com/Muowestern/photos/?ref=page_internal" data-toggle="tooltip" title="More info about Muo Western XXL">Click Here</a></p> 
+  <p>For More Information: <a href="about.php" data-toggle="tooltip" title="About us">Click Here</a></p> 
 </footer>
 
 <script>
