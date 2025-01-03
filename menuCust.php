@@ -88,7 +88,7 @@ $db->connect('localhost','root','','muowestern');
   }
   .btn {
     padding: 10px 20px;
-    background-color: #560A02;
+    background-color:rgb(93, 93, 93);
     color: #f1f1f1;
     border-radius: 0;
     transition: .2s;
@@ -99,7 +99,7 @@ $db->connect('localhost','root','','muowestern');
     color: #000;
   }
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color: #000000;
     color: #fff !important;
     text-align: center;
     font-size: 30px;
@@ -113,7 +113,7 @@ $db->connect('localhost','root','','muowestern');
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #741a0d;
+    background-color: #000000;
     border: 0;
     font-size: 15px !important;
     letter-spacing: 6px;
@@ -244,49 +244,6 @@ $db->connect('localhost','root','','muowestern');
 ?>
  
 </div>
-
-<!-- Container (Contact Section) -->
-<form action="addComment.php" method="post">
-<div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>Any Suggestion?  Let us know!</em></p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <p>Need more information? Contact us on:</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>No.9 MBJB De'Kontena, Bandar Baru Permas Jaya,81750 Masai, Johor 81750 Johor Bahru, Johor, Malaysia</p>
-      <p><span class="glyphicon glyphicon-phone"></span> Phone: +6011-2672 4577</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> Email: MuoWestern@gmail.com</p>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="suggestion" name="suggestion" placeholder="Suggestion" rows="5"></textarea>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-right" name="sent" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</form>
-
-
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#muoWestern" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p>For More Information: <a href="https://www.facebook.com/Muowestern/photos/?ref=page_internal" data-toggle="tooltip" title="More info about Muo Western XXL">Click Here</a></p> 
-</footer>
 
 <script>
 $(document).ready(function(){
