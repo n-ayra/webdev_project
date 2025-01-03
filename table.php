@@ -243,14 +243,6 @@ if(isset($_POST['send'])){
 <br>
 <br>
 
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#muoWestern" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p>For More Information: <a href="about.php" data-toggle="tooltip" title="About us">Click Here</a></p> 
-</footer>
-
 <script>
 $(document).ready(function(){
   // Initialize Tooltip
