@@ -83,7 +83,7 @@ include "connection.php";
   }
   .btn {
     padding: 10px 20px;
-    background-color: #560A02;
+    background-color:rgb(5, 2, 86);
     color: #f1f1f1;
     border-radius: 0;
     transition: .2s;
