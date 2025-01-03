@@ -87,7 +87,7 @@ $db->connect('localhost','root','','muowestern');
     color: #000;
   }
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color: #000000;
     color: #fff !important;
     text-align: center;
     font-size: 30px;
