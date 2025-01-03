@@ -36,7 +36,7 @@ if(isset($_POST['send'])){
       margin: 20px;
       letter-spacing: 10px;
       font-size: 80px;
-      color: #B62511;
+      color:rgb(22, 17, 182);
           
     }
 
@@ -70,8 +70,8 @@ if(isset($_POST['send'])){
     }
   }
   .bg-1 {
-    background: #D34426;
-    color: #761401;
+    background:rgb(47, 38, 211);
+    color:rgb(1, 19, 118);
   }
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
@@ -94,7 +94,7 @@ if(isset($_POST['send'])){
   }
   .btn {
     padding: 10px 20px;
-    background-color: #560A02;
+    background-color:rgb(2, 6, 86);
     color: #f1f1f1;
     border-radius: 0;
     transition: .2s;
@@ -105,14 +105,14 @@ if(isset($_POST['send'])){
     color: #000;
   }
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color:rgb(7, 20, 142);
     color: #fff !important;
     text-align: center;
     font-size: 30px;
   }
   .modal-header, .modal-body {
     padding: 40px 50px;
-    background: #f2c7ac;
+    background:rgb(172, 172, 242);
   }
   .nav-tabs li a {
     color: #B62511;

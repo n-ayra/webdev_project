@@ -6,7 +6,7 @@ session_start();
 <html lang="en">
 <head>
 
-  <title>MUO Western XXL</title>
+<title>Flame & Fork</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +16,8 @@ session_start();
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
   body {
     font: 400 15px/1.8 Lato, sans-serif;
@@ -25,8 +27,8 @@ session_start();
   h1 {
       margin: 20px;
       letter-spacing: 10px;
-      font-size: 60px;
-      color: #D34426;
+      font-size: 80px;
+      color: #206142;
           
     }
 
@@ -36,17 +38,16 @@ session_start();
     font-size: 20px;
   }
   .container {
-    padding: 80px 120px;
+    padding: 100px 140px;
     margin-left: auto;
     margin-right: auto;
-    
   }
   .container-fluid {
     margin-left: auto;
     margin-right: auto;
   }
   .person {
-    border: 10px solid transparent;
+    border: 0px solid transparent;
     margin-bottom: 25px;
     width: 80%;
     height: 80%;
@@ -61,9 +62,8 @@ session_start();
     }
   }
   .bg-1 {
-    background: #f2c7ac;
+    background: #D34426;
     color: #761401;
-    
   }
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
@@ -86,9 +86,9 @@ session_start();
   }
   .btn {
     padding: 10px 20px;
-    background-color: #560A02;
+    background-color: #2b8057;
     color: #f1f1f1;
-    border-radius: 0;
+    border-radius: 18px;
     transition: .2s;
   }
   .btn:hover, .btn:focus {
@@ -97,15 +97,14 @@ session_start();
     color: #000;
   }
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color: #206142;
     color: #fff !important;
     text-align: center;
     font-size: 30px;
   }
   .modal-header, .modal-body {
-    padding: 5px 5px;
-    height: auto;
-    background: #f2c7ac;
+    padding: 40px 50px;
+    background: #FFFDD0;
   }
   .nav-tabs li a {
     color: #B62511;
@@ -113,7 +112,7 @@ session_start();
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #741a0d;
+    background-color: #2b8057;
     border: 0;
     font-size: 15px !important;
     letter-spacing: 6px;
@@ -168,6 +167,16 @@ session_start();
     border: 5px solid #fff;
     width: 900px;
   }
+  .hideme
+{
+    display:none;
+    visibility:hidden;
+}
+.showme
+{
+    display:inline;
+    visibility:visible;
+}  
   </style>
 </head>
 <body id="muoWestern" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -185,12 +194,12 @@ session_start();
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav navbar-left">
-        <li><a onclick="location.href='homepageCashier.php'">HOMEPAGE</a></li>
-        <li><a onclick="location.href='profileCashier.php'">MY PROFILE</a></li>
-        <li><a onclick="location.href='addMenu.php'">ADD MENU</a></li>
-        <li><a onclick="location.href='menu.php'">EDIT MENU</a></li>
-        <li><a onclick="location.href='custTable.php'">CUSTOMER PAYMENT</a></li>
-        <li><a href="logout.php">LOG OUT</a></li>
+    <li><a onclick="location.href='homepageCashier.php'">Homepage</a></li>
+        <li><a onclick="location.href='profileCashier.php'">Profile</a></li>
+        <li><a onclick="location.href='addMenu.php'">Add Menu</a></li>
+        <li><a onclick="location.href='menu.php'">Edit Menu</a></li>
+        <li><a onclick="location.href='custTable.php'">Payment</a></li>
+        <li><a href="logout.php">Log Out</a></li>
       </ul>
     </div>
   </div>
@@ -241,7 +250,6 @@ session_start();
   <a class="up-arrow" href="#muoWestern" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>For More Information: <a href="https://www.facebook.com/Muowestern/photos/?ref=page_internal" data-toggle="tooltip" title="More info about Muo Western XXL">Click Here</a></p> 
 </footer>
 
 <script>
