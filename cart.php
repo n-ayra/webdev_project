@@ -58,7 +58,7 @@ session_start();
   }
   .bg-1 {
     background:rgb(134, 134, 134);
-    color: #f1f1f1;
+    color:rgb(0, 0, 0);
   }
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
