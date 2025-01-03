@@ -17,97 +17,35 @@ session_start();
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-  body {
-    font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
-  }
+ body {
+  font: 400 16px/1.8 'Lato', sans-serif;
+  color: #555;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
 
-  h1 {
-      margin: 20px;
-      letter-spacing: 10px;
-      font-size: 60px;
-      color:rgb(52, 38, 211);
-          
-    }
+h1 {
+  margin: 20px;
+  letter-spacing: 5px;
+  font-size: 50px;
+  color: #3436d3;
+}
 
-  h4 {
-    margin: 10px 0 30px 0;
-    letter-spacing: 2px;      
-    font-size: 20px;
-  }
-  .container {
+h4 {
+  margin: 10px 0 30px 0;
+  letter-spacing: 2px;
+  font-size: 22px;
+  color: #333;
+}
+
+.container {
     padding: 80px 120px;
     margin-left: auto;
     margin-right: auto;
-    
   }
-  .container-fluid {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .person {
-    border: 10px solid transparent;
-    margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
-    opacity: 0.7;
-  }
-  .person:hover {
-    border-color: #f1f1f1;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
-  .bg-1 {
-    background:rgb(179, 172, 242);
-    color:rgb(7, 1, 118);
-    
-  }
-  .bg-1 h3 {color: #fff;}
-  .bg-1 p {font-style: italic;}
-  .list-group-item:first-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-  .list-group-item:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail p {
-    margin-top: 15px;
-    color: #555;
-  }
-  .btn {
-    padding: 10px 20px;
-    background-color:rgb(2, 3, 86);
-    color: #f1f1f1;
-    border-radius: 0;
-    transition: .2s;
-  }
-  .btn:hover, .btn:focus {
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
-  }
-  .modal-header, h4, .close {
-    background-color:rgb(7, 7, 142);
-    color: #fff !important;
-    text-align: center;
-    font-size: 30px;
-  }
-  .modal-header, .modal-body {
-    padding: 5px 5px;
-    height: auto;
-    background:rgb(172, 178, 242);
-  }
-  .nav-tabs li a {
+
+.nav-tabs li a {
     color:rgb(0, 0, 0);
   }
   .navbar {
@@ -132,42 +70,81 @@ session_start();
   .navbar-default .navbar-toggle {
     border-color: transparent;
   }
-  .open .dropdown-toggle {
-    color: #fff;
-    background-color: #555 !important;
-  }
-  .dropdown-menu li a {
-    color: #000 !important;
-  }
-  .dropdown-menu li a:hover {
-    background-color: red !important;
-  }
-  footer {
-    background-color: #2d2d30;
-    color: #f5f5f5;
-    padding: 32px;
-  }
-  footer a {
-    color: #f5f5f5;
-  }
-  footer a:hover {
-    color: #777;
-    text-decoration: none;
-  }  
-  .form-control {
-    border-radius: 0;
-  }
-  textarea {
-    resize: none;
-  }
-  th {
-    background-color: brown;
-    color: black;
-  }
-  table, th, td {
-    border: 5px solid #fff;
-    width: 900px;
-  }
+.footer {
+  background-color: #343a40;
+  color: #d6d6d6;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #ffd700;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  background-color: #3436d3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #2c2fb1;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+th {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.thumbnail {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal-header {
+  background-color:rgb(181, 172, 242);
+  color: #fff;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.modal-body {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+textarea {
+  resize: vertical;
+  border-radius: 5px;
+}
+
   </style>
 </head>
 <body id="muoWestern" data-spy="scroll" data-target=".navbar" data-offset="50">
