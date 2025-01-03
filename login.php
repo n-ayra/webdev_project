@@ -1,3 +1,8 @@
+<?php
+session_start();
+require_once "connection.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,7 +50,7 @@
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             color: #fff;
-            border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle white outline */
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         .form-control {
@@ -101,12 +106,12 @@
             <h3 class="mb-4">Login</h3>
             <form action="auth.php" method="post" onsubmit="return validateForm()">
                 <div class="form-group">
-                    <input type="email" name="email" class="form-control" placeholder="Email">
+                    <input type="text" name="username" class="form-control" placeholder="Username">
                 </div>
                 <div class="form-group">
                     <input type="password" name="password" class="form-control" placeholder="Password">
                 </div>
-                <button type="submit" class="btn btn-login btn-block">Login</button>
+                <button type="submit" name="Login" class="btn btn-login btn-block">Login</button>
             </form>
             <div class="links mt-3">
                 Don't have an account? <a href="register.php">Register now</a>.
@@ -117,9 +122,9 @@
 
     <script>
         function validateForm() {
-            const email = document.forms[0]["email"].value;
+            const username = document.forms[0]["username"].value;
             const password = document.forms[0]["password"].value;
-            if (email === "" || password === "") {
+            if (username === "" || password === "") {
                 alert("Please fill in all fields.");
                 return false;
             }
