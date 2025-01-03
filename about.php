@@ -25,7 +25,7 @@ include "connection.php";
       margin: 20px;
       letter-spacing: 10px;
       font-size: 80px;
-      color: #B62511;
+      color:rgb(20, 17, 182);
           
     }
 
@@ -59,8 +59,8 @@ include "connection.php";
     }
   }
   .bg-1 {
-    background: #D34426;
-    color: #761401;
+    background:rgb(61, 38, 211);
+    color:rgb(7, 1, 118);
   }
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
@@ -94,7 +94,7 @@ include "connection.php";
     color: #000;
   }
   .modal-header, h4, .close {
-    background-color: #8e1e07;
+    background-color:rgb(20, 7, 142);
     color: #fff !important;
     text-align: center;
     font-size: 30px;
@@ -103,12 +103,12 @@ include "connection.php";
     padding: 40px 50px;
   }
   .nav-tabs li a {
-    color: #B62511;
+    color:rgb(17, 20, 182);
   }
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #741a0d;
+    background-color:rgb(34, 13, 116);
     border: 0;
     font-size: 15px !important;
     letter-spacing: 6px;
@@ -122,7 +122,7 @@ include "connection.php";
   }
   .navbar-nav li.active a {
     color: #fff !important;
-    background-color: #B62511 !important;
+    background-color:rgb(36, 17, 182) !important;
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
